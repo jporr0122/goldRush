@@ -1,0 +1,110 @@
+body {
+	background-color: beige;
+}
+
+p{
+	text-align: center;
+	font-size: 20;
+	font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+}
+
+img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	padding-top: 5px;
+	
+}
+
+h1 {
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+}
+
+hr {
+	border: 1px solid;
+}
+
+iframe {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 15%;
+	padding: 10px;
+}
+
+.code {
+	text-align: center;
+}
+
+.code label{
+	font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+}
+
+#inputNum {
+	width: 60px;
+}
+
+button {
+    background: #11c3ff linear-gradient(to bottom, transparent, #009bcf);
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    font: bold 12px Arial, Helvetica, sans-serif;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+	margin-left: 30%;
+	margin-right: 30%;
+	width: 40%;
+}
+
+.action-button:hover {
+	background-color: #4CAF50;
+	color: white;
+}
+
+#exit button:hover {
+	background-color: red;
+	color: white;
+}
+
+#aquireExit button:hover {
+	background-color: red;
+	color: white;
+}
+
+.inventory {
+	padding-top: 10px;
+}
+
+.submitNum {
+	background: #11c3ff linear-gradient(to bottom, transparent, #009bcf);
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    font: bold 12px Arial, Helvetica, sans-serif;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+	margin-left: 1%;
+	margin-right: 1%;
+	width: 12%;
+}
+
+.submitNum:hover {
+	background-color: #4CAF50;
+	color: white;
+}
+
+h4 {
+	text-align: center;
+	font-size: 15;
+	font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+}
+

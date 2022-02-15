@@ -1,0 +1,41 @@
+<html>
+
+	<head>
+		<title> Gold Rush </title>
+		<link rel="icon" href="assets/goldrush-logo.png" />
+		<link href='styles/styles.css' rel="stylesheet"/>
+	</head>
+	
+	<body>
+		<h1>You've discovered a locked chest along the path.</h1>
+		<hr>	
+		<img src='assets/lockbox.jpg' height="450" width="250">
+		<p> The chest requires a number code.
+			(You may want to talk to the miners first.</br>
+			They may have a hint for you)		
+		</p>
+		<div class='code'>
+			<label>Enter the code:</br></label>
+			<input type="number" id='inputNum' placeholder='#'>
+			<input type="button" class="submitNum" value='Submit' onClick="numCode()">
+			<a id='exit' href='spookyfork.html'>
+				<button>Give Up</button>
+			</a> 
+		</div>
+		<hr>
+		<iframe src='inventory.html' scrolling="no" id=inventory height=100 width=125></iframe>
+		<script> 
+			inventory.src += location.search;
+			exit.href += location.search;
+			
+			function numCode(){
+				
+				if (inputNum.value == '1849'){
+					parent.location='chest.html'+location.search;
+				}
+			}
+		</script>
+
+	</body>
+	
+</html>

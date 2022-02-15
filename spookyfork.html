@@ -1,0 +1,33 @@
+<html>
+
+	<head>
+		<title> Gold Rush </title>
+		<link rel="icon" href="assets/goldrush-logo.png" />
+		<link href='styles/styles.css' rel="stylesheet"/>
+	</head>
+	
+	<body>
+		<h1>Choose Wisely</h1>
+		<hr>
+		<img src='assets/fork.jpg' height="450" width="250" />
+		<h4>Where do you want to go?</h4>
+		<a id='left' href='left.html'>
+			<button class="action-button">Left</button>
+		</a>
+		
+		<a id='right' href='right.html'> 
+			<button class="action-button">Right</button>
+		</a>
+
+		<hr>
+		<div class='inventory'>
+			<iframe src='inventory.html' scrolling="no" id=inventory height=100 width=125></iframe>
+		</div>
+		<script>
+			inventory.src += location.search; //concat the search parameter to the iframe's src attribute
+			left.href += location.search; //concat the search parameter to the anchor's href attribute
+			right.href += location.search; //concat the search parameter to the anchor's href attribute		
+		</script>
+    </body>
+	
+</html>

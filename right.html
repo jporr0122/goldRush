@@ -1,0 +1,43 @@
+<html>
+
+	<head>
+		<title> Gold Rush </title>
+		<link rel="icon" href="assets/goldrush-logo.png" />
+		<link href='styles/styles.css' rel="stylesheet"/>
+	</head>
+	
+	<body>
+		<h1>You've encountered other miners</h1>
+		<hr>	
+		<img src='assets/miners.jpg' height="450" width="250">
+		<p> Hello! You look new around here. Let us educate you on this mine. </br>
+		This mine is very dangerous and old. It was opened in <u><b>1849</b></u> during the gold rush, so it can collapse at any moment. </br>
+		If you stick with us, kid, you won't have any issues.
+		</p>
+		<div>
+			<p>Would you like to come along with us? or would you like to mine by yourself?</p>
+			<p>You also might want a pick or a lantern from the chest</p>
+			<a id='yes' href='yes.html'>
+				<button class="action-button"> Go with them </button> 
+			</a>
+			<a id='no' href='no.html'>
+				<button class="action-button"> Mine by myself </button>
+			</a>
+		</div>
+		<div> 
+			<a id='exit' href='spookyfork.html'>
+				<button>Go Back</button>
+			</a> 
+		</div>
+		<hr>
+		<iframe src='inventory.html' scrolling="no" id=inventory height=100 width=125></iframe>
+		<script> 
+			inventory.src += location.search;
+			exit.href += location.search;
+			no.href += location.search;
+			yes.href += location.search;
+		</script>
+
+	</body>
+	
+</html>

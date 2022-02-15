@@ -1,0 +1,37 @@
+<html>
+	
+	<head>
+		<title> Gold Mine </title>
+		<link rel="icon" href="assets/goldrush-logo.png" />
+		<link href='styles/styles.css' rel="stylesheet"/>
+	</head>
+	
+	<body>
+		<h1>You've unlocked the chest!</h1> <hr>
+		<img src='assets/unlockedchest.gif' width="480">
+		<p>You've aquired a pick and a lantern<p>
+		<div id='aquireExit'> 
+			<a id='exit' href='spookyfork.html'>
+				<button>Go Back</button>
+			</a> 
+		</div>
+		<hr>
+		<iframe src='inventory.html' scrolling="no" id=inventory height=100 width=125></iframe>
+		<script> 
+		
+			//concat search param to hrefs
+			inventory.src += location.search;
+			exit.href += location.search;
+			
+			var queryString = new URLSearchParams(location.search);
+			var pa = +queryString.get("pa");
+			var fs = +queryString.get("fs");
+			queryString.set('pa',pa+1);
+			queryString.set('fs',fs+1);
+			inventory.src = 'inventory.html?'+queryString;
+			
+			aquireExit.innerHTML = `<a href='spookyfork.html?${queryString}'><button>Go back</button></a>`
+		</script>
+	</body>
+	
+</html>

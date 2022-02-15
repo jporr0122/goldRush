@@ -1,0 +1,22 @@
+<html>
+	<head></head>
+	<body>
+		Inventory: <hr>
+		<table>
+			<tr>
+				<th> &#9935; </th><!-- emoji: ⛏ -->
+				<th> &#x1f525; </th> <!-- emoji: 🔥 -->
+			</tr>
+			<tr>
+				<td id='pa'>0</td>
+				<td id='fs'>0</td>
+			</tr>
+		</table>
+		<script> 
+		var queryString = new URLSearchParams(location.search);
+		pa.innerText = queryString.get("pa");
+		fs.innerText = queryString.get("fs");
+		</script>
+		
+	</body>
+</html>
